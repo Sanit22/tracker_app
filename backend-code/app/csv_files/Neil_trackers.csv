@@ -1,6 +1,0 @@
-Tracker name,Tracker Type,Description,Settings
-mood,Multiple Choice,Tracking moods,"happy,sad,cranky,angryy"
-Running,Numerical,Running schedule tracker,km
-Study,Time Duration,how much in hours,hours
-Gym,Boolean,went or not,"Yes,No"
-Test12,Numerical,testing.....rewrwerw,km
