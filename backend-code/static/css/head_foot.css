@@ -1,0 +1,19 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#nav-menu{
+    background-color: rgb(162 32 32);
+    color: white;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.success{
+    background-color: #42ba96;
+    text-align: center;
+    padding: 3px;
+}

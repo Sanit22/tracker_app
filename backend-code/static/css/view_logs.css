@@ -1,0 +1,9 @@
+#main-container{
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+}
+
+#graph img{
+    width:100%;
+}

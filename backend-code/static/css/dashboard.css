@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(223, 222, 222);
+}
+
+/* .success{
+    background-color: #42ba96;
+    text-align: center;
+    padding: 3px;
+} */
+
+.tracker-card{
+    border-radius: 13px;
+    margin-bottom:70px;
+    background-color:  rgb(198 76 76);
+    padding: 15px;
+    color: white;
+    height: 200px;
+    width: 240px;
+}
+
+.main-container{
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+#options-button{
+    background-color: #a14444;
+    border: none;
+}
