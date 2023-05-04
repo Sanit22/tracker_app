@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> Edit tracker </h1>
+        <div>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <p class="flashes">
+                        {% for message in messages %}
+                            <p> {{message}} </p>
+                        {% endfor %}
+                    </p>     
+                {% endif %}
+            {% endwith %}
+      
+        </div>
+
+        <form method="POST" action="/edit_tracker/{{tracker_id}}">
+            {{ form.csrf_token }}
+            <div>
+                {{ form.name.label() }}
+                {{ form.name() }}
+            </div>
+            <div>
+                {{ form.tracker_type.label() }}
+                {{ form.tracker_type() }}
+            </div>
+           <div>
+                {{ form.description.label() }}
+                {{ form.description() }}
+           </div>
+           {{ form.tracker_settings() }}
+            <div id="settings">
+                
+            </div>
+            
+            {{ form.submit() }}
+        </form>
+
+        <script src="../static/js/tracker_form.js"></script>
+    </body>
+</html>

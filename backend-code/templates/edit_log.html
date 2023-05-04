@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1> EDIT LOG FORM </h1>
+
+        <form id="log_form" method="POST" action="/edit_log/{{tracker_id}}/{{log_id}}">
+            {{ form.csrf_token }}
+            <div>
+                {{ form.note.label() }}
+                {{ form.note()}}
+            </div>
+
+            <div>
+                {{ form.value.label() }}
+                {{ form.value() }}
+            </div>
+            {{ form.timestamp()  }}
+    
+            <div>
+                <label> Timestamp: </label>
+                <input id="datetime" name="timestamp" type="datetime-local" value="{{timestamp}}">
+            </div>
+
+            {{ form.submit() }}
+            
+        </form>
+        <script src="{{ url_for('static', filename='js/edit_log.js')}}"> </script>
+    </body>
+</html>

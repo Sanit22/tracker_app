@@ -1,0 +1,5 @@
+Tracker name,Tracker Type,Description,Settings
+Running,Numerical,dasaa,km
+Mood,Multiple Choice,dsf,"happy,sad,angry,cranky"
+Study,Time Duration,fsf,hours
+Gym,Boolean,sga,"Yes,No"

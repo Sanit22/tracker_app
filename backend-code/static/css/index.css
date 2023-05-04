@@ -1,0 +1,26 @@
+body,html{
+    height: 100%;
+    background-color: #f0f2f5;
+}
+
+#navbar{
+    height: 13vh;
+}
+
+#password_warning{
+    display: none;
+}
+
+#con_password_warning{
+    display: none;
+}
+
+.login_divs{
+    width: 350px;
+}
+
+.error{
+    background-color: rgb(231, 101, 101);
+    padding: 5px;
+    margin-top: 14px;
+}
